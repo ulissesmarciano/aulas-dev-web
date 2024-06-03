@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    /* width: 300px; */
+}
+
+.primeiro-elemento {
+    width: 100vw;
+    background-color: aqua;
+}
+
+.segundo-elemento {
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.terceiro-elemento {
+    text-align: center;
+}
+
+.vw-fontsise {
+    font-size: 20vw;
+}
+
+.vh-fontsise {
+    font-size: 20vh;
+}

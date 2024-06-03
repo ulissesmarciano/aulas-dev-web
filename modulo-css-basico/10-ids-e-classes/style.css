@@ -1,0 +1,28 @@
+/* IDS */
+
+
+/* #descricao-pc {
+    background-color: orange;
+}
+
+#descricao-videogame {
+    background-color: orange;
+} */
+
+
+/* #descricao-pc, #descricao-videogame {
+    background-color: orange;
+} */
+
+
+/* CLASSES - É o melhor para se utilizar para estilização, IDS são somente utilizados uma vez na página. A classe pode se repetir.*/
+
+
+.descricao-produto {
+    background-color: orange;
+}
+
+.promocao {
+    border: solid 2px green;
+    background-color: transparent;
+}

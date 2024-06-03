@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+}
+
+.elemento {
+    color: #fff;
+    font-size: 32px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.elemento-estatico {
+    left: 100px;
+    position: static;
+    background-color: crimson;
+    /* esse elemento vem por padrão e qualquer valor que coloco no elemento não o altera de lugar */
+}
+
+.elemento-relativo {
+    left: 100px;
+    position: relative;
+    background-color: coral;
+    /* Nesse caso consigo movimentar o elemento */
+}
+
+.elemento-absoluto {
+    position: absolute;
+    background-color: darkcyan;
+    left: 100px;
+
+    /* aqui o elemento está solto e se coloco por exemplo um top: 0; a div sobe para o topo da página */
+}
+
+.elemento-relativo-com-filho {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(214, 212, 212);
+}
+
+.elemento-absoluto-com-pai {
+    position: absolute;
+    top: 0;
+    /* aqui o elemento fica movimentando dentro da sua div pai */
+
+    width: 150px;
+    height: 150px;
+    background-color: darkcyan;
+}

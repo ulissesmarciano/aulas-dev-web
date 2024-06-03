@@ -1,0 +1,12 @@
+/* DISPLAY BLOCK: padrão - faz com que o elemento fique sozinho na linha e seu elemento ocupe o restante da página msmo que seja somente espaço. */
+
+
+h1 {
+    display: block;
+}
+
+/* ILINE: com que os elementos se juntem e fiquem em linha até o final da página. */
+
+p {
+    display: inline;
+}

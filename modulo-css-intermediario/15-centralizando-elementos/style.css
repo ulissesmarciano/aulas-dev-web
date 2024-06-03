@@ -1,0 +1,64 @@
+body{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+.container {
+    background-color: lightgray;
+    height: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 250px;
+    height: 50px;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+/* ESTILOS GERAIS */
+
+
+.texto-centralizado-1 {
+    width: 250px;
+    height: 250px;
+    background-color: orange;
+
+    text-align: center;
+    line-height: 250px;
+}
+
+.texto-centralizado-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translateX(-50%);
+    transform: translateY(-50%); */
+
+    transform: translate(-50%, -50%);
+}
+
+.alinhado-margin-auto {
+    margin: auto;
+    /* Somente com o margin auto não funciona pois o botão é display inline por padrão */
+    display: block;
+}
+
+.alinhado-absolute{
+    position: absolute;
+    margin: auto;
+    /* Até aqui o position absolute não funciona com margin auto */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Aqui o margin auto passa a funcionar pois os lados receberam um valor zerado */
+}
+
+.container-text-align {
+    text-align: center;
+}

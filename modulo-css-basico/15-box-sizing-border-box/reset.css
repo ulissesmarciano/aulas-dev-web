@@ -1,0 +1,15 @@
+/* EXEMPLO de como é utilizado o reset em um site. */
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    list-style-type: none;
+}

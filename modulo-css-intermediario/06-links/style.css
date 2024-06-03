@@ -1,0 +1,20 @@
+a {
+    cursor: progress;
+    margin: 20px;
+    padding: 10px;
+}
+
+a:visited {
+    /*  aqui eu estiliza todo o link clicado */
+    color: orange;
+}
+
+a:active {
+    /* aqui eu estilizo quando clica no link */
+    color: red;
+}
+
+a:hover {
+    background-color: red;
+    color: aliceblue;
+}

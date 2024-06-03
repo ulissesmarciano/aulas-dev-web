@@ -1,0 +1,22 @@
+
+* {
+    margin: 0;
+}
+
+body {
+    height: 1500px;
+    /* Verificar em vídeo como fazer o cálculo das alturas do body para que fique na medida uma vez que coloquei o position fixed no header */
+    padding-top: 67px;
+}
+
+header {
+    font-size: 24px;
+    position: fixed;
+    /* Com o position fixed o menu se destaca dos elementos e fica no topo */
+    background-color: lightskyblue;
+    width: 100%;
+    padding: 20px;
+    top: 0;
+}  
+
+/* Com essa configuração o scroll mantem o header fixo na tela */

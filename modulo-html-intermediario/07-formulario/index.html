@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuláriot</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <h3>Formulário com GET</h3>
+    <!-- Metudo coloca parâmetro na url para que outra página renderize conforme a busca -->
+    <form action="index.html" method="get">
+        <input type="text" name="q">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h3>Formulário com POST</h3>
+    <!-- O Post não passa parâmetro pela url pois passa ocultamente para segurança do usuário (pode ser utilizado para cadastro e login por exemplo) -->
+    <form action="index.html" method="post">
+        <input type="text" name="q">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h3>Formulário de login no Facebook</h3>
+    <form method="get" action="index.html" enctype="multipart/form-data">
+
+        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        <!-- O required é utilizado para tornar obrigatório o preenchimento do campo en que está inserido -->
+
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome"><br>
+        <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou email"><br>
+        <input type="password" name="senha" id="senha" placeholder="Nova senha"><br><br>
+
+        <label >Data de nascimen</label>
+        <select name="dia" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <select name="mes">
+            <option value="jan">Jan</option>
+            <option value="feb">Fev</option>
+            <option value="mar">Mar</option>
+            <option value="abr">Abr</option>
+            <option value="mai">Mai</option>
+        </select>
+
+        <select name="ano">
+            <option value="1">1999</option>
+            <option value="2">2000</option>
+            <option value="3">2001</option>
+            <option value="4">2002</option>
+            <option value="5">2003</option>
+        </select><br><br>
+
+        <label >Genero</label><br>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+
+        <label for="personalizado">Personalizado</label>
+        <input type="radio" name="genero" id="personalizado" value="personalizado"><br>
+
+        <input type="file" >
+        <!-- input para envio de arquivos e na tag form precisa colocar o enctype para que o servidor possa receber esse arquivo -->
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
