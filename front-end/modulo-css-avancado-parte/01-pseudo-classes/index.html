@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+
+    <h2>First Child</h2>
+    <!-- Essa pseudo classe estiliza somente o primeiro item filho (o primeiro <p> no caso) de cada elemento pai -->
+    <div>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde pariatur impedit rerum soluta vel, quibusdam illum doloribus eius repellendus perspiciatis magnam ea laboriosam officiis excepturi obcaecati numquam modi est!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde pariatur impedit rerum soluta vel, quibusdam illum doloribus eius repellendus perspiciatis magnam ea laboriosam officiis excepturi obcaecati numquam modi est!</p>
+    </div>
+
+    <h2>Last Child</h2>
+    <!-- Neste caso somente o ultimo item é estilizado -->
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde pariatur impedit rerum soluta vel, quibusdam illum doloribus eius repellendus perspiciatis magnam ea laboriosam officiis excepturi obcaecati numquam modi est!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde pariatur impedit rerum soluta vel, quibusdam illum doloribus eius repellendus perspiciatis magnam ea laboriosam officiis excepturi obcaecati numquam modi est!</p>
+    </div>
+
+    <h2>Not</h2>
+    <!-- Esta pseudo classe estiliza tudo, menos a classe que for indicada -->
+    <div>
+        <p class="padrao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde pariatur impedit rerum soluta vel, quibusdam illum doloribus eius repellendus perspiciatis magnam ea laboriosam officiis excepturi obcaecati numquam modi est!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde pariatur impedit rerum soluta vel, quibusdam illum doloribus eius repellendus perspiciatis magnam ea laboriosam officiis excepturi obcaecati numquam modi est!</p>
+    </div>
+
+    <h2>NTHL CHILD</h2>
+    <!-- 
+    -- Nessa estrutura quando passo como parâmetro odd, todos os elementos ímpares serão estilizados. 
+    -- Quando utilizo even, todos os pares serão estilizados
+    -- Posso também utilizar uma propriedade que estiliza à cada: 2n, 3n, 4n.
+    -- Quando utilizo somente um número eu estou dizendo que quero utilizar somente aquele item por ordem.
+    -- Quando quero um range estilizado, utilizo :nth-child(n+2):nthchild(-n+5)
+    -->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+    
+    <h2>NTH LAST CHILD</h2>
+    <!-- A diferença desta pseudo classe item é que estiliza começando do fim -->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+
+    <h2>ONLY CHILD</h2>
+    <!-- Neste Caso Estiliza-se somente o elemento filho que é sozinha dentro do elemento pai -->
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos doloribus impedit autem quasi incidunt placeat porro laboriosam, aliquam ea nesciunt consequuntur, dolores illo dolorem iure perferendis repellat a at. Dignissimos.</p>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet omnis vero magnam enim veniam, blanditiis saepe nesciunt provident ex repellat totam amet beatae numquam sit! Similique eligendi error rem nobis.</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet omnis vero magnam enim veniam, blanditiis saepe nesciunt provident ex repellat totam amet beatae numquam sit! Similique eligendi error rem nobis.</p>
+    </div>
+</body>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo</title>
+</head>
+<body>
+    <h1>Vídeo</h1>
+
+    <video src="videos/video.mp4" width="500" controls poster="images/thumb.jpg"></video>
+    <!-- 
+    -- controls ativa os controles de play pause etc
+    -- autoplay faz com que o video toque automaticamente, mas ao carregar a página fica parado. Para isso utiliza-se o muted que faz com que o vídeo carregue automaticamente ao recarregar a página 
+    -- para que o vídeo carregue novamente após terminar utilizo o atributo loop
+    -- quando quero carregar uma thumb para o vídeo retiro o autoplay e o loop e insiro o atributo poster com o caminho da imagem que será renderizada.
+    -->
+
+    <video controls width="500">
+        <source src="videos/video.mp4" type="video/mp4">
+        <source src="videos/video.mp4" type="video/ogg">
+        <source src="videos/video.mp4" type="video/webm">
+
+        <p>Esse navegador não têm suporte a tag video.</p>
+
+        <!-- 
+        -- Aqui foi criado um fallback para rodar extensões diferentes por questão de compatibilidade com navegadores e caso nenhum rode por alguma questão, apresenta-se o aviso que o navegador não roda a extensão 
+        -- Recomenda-se sempre colocar a extensão a qual o vídeo é menor para que a página carregue, por critério, um pouco mais rápido.
+        -- Caso não tenha o vídeo você pode fazer a conversão em sites como convertio.co
+        -->
+
+        <!-- 
+            -- OBS: sempre é bom conversar com o líder/cliente do projeto para que possa postar o vídeo no youtube pois é menos custoso.
+        -->
+    </video>
+
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/G9pYHlW9v40?si=KA7_Po8TiAK1xD2W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- 
+        -- MELHOR OPÇÃO: subir o vídeo para o Youtube e no vídeo clica em compartilher. Lá encontrará o iframe que pode ser modificado e feito compado para colar na sua página.
+    -->
+</body>
+</html>

@@ -1,0 +1,17 @@
+img {
+    width: 200px;
+}
+
+/* para dada um eu posso dizer que quero mexer somente em um eixo */
+
+img.scale{
+    transform: scale(2, 1.5);
+}
+
+img.rotate{
+    transform: rotate(45deg);
+}
+
+img.translate{
+    transform: translate(50px, 20px);
+}
