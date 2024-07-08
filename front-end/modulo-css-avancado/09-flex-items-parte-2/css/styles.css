@@ -1,0 +1,44 @@
+.flex-0 {
+    /* flex-grow, flex-shrink, flex-basis */
+    flex: 0;
+}
+
+.flex-1 {
+    /* flex-grow altera, flex-shrink padrão, flex-basis paldrão */
+    flex: 1;
+}
+
+.order .item3 {
+    order: 1;
+
+    /* Quem tiver o order maior vem primeiro. */
+}
+
+.order .item2 {
+    order: 2;
+
+    /* Quem tiver o order maior vem primeiro. */
+}
+
+.align-self .item5 {
+    align-self: auto;
+}
+
+.align-self.start .item3{
+    align-self: flex-start;
+}
+
+.align-self.end .item3{
+    align-self: flex-end;
+}
+
+.align-self.center .item3{
+    align-self: center;
+}
+
+.align-self.stretch .item3{
+    align-self: stretch;
+}
+
+ 
+
