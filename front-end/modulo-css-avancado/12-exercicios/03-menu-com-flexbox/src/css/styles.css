@@ -1,0 +1,94 @@
+.container {
+    padding: 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container .logo {
+    display: flex;
+    align-items: center;
+}
+
+.container .logo .logo-name {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.container .logo .logo-image {
+    height: 45px;
+}
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+}
+
+/* RESOLVER O PADDING DO SOBRE AQUI, POIS AQUI SE CON */
+
+.menu li .item{
+    padding: 10px 5px;
+    font-size: 15px;
+
+    transition: 0.3s ease-in-out;
+}
+
+.menu li .item:hover {
+    background-color: #5BC241;
+    color: #fff;
+}
+
+/* RESOLVER O HOVER OU ACTIVE AQUI */
+
+
+.container .navigation .menu .button {
+    width: 127px;
+    height: 39px;
+
+    background-color: #5BC241;
+    border: none;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .navigation .menu .button a {
+    color: #fff;
+    font-weight: 300;
+}
+
+@media(max-width: 425px){
+    .container {
+        flex-direction: column;
+    }
+
+    .navigation {
+        margin-top: 94px;
+
+    }
+
+    .navigation .menu {
+        flex-direction: column;
+
+    }
+
+    .navigation .menu .item {
+        font-size: 40px;
+        font-weight: 400;
+
+        padding: 17px 40px;
+
+    }
+
+    .container .navigation .menu .button {
+        margin-top: 25px;
+    }
+}
