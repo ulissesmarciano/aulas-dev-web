@@ -1,0 +1,80 @@
+.verde-claro {
+    background-color: aquamarine;
+}
+
+.azul {
+    background-color: cornflowerblue;
+}
+
+.rosa {
+    background-color: hotpink;
+}
+
+.laranja-escuro {
+    background-color: orangered;
+}
+
+.verde-forte {
+    background-color: green;
+}
+
+.marrom {
+    background-color: burlywood;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 15px;
+}
+
+.verde-claro {
+    /*
+        AQUI O CÓDIGO DE FORMA NÃO ABREVIADA
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 3; */
+
+    /* AQUI DE FORMA ABREVIADA MAS CONTO ATÉ O INÍCIO DA PRÓXIMA COLUNA
+
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    */
+
+    /* AQUI A FORMA É ABREVIADA, MAS CONTENDO O span QUE DIZ QUANTO EU QUERO EXPANDIR MINHA DIV NO GRID
+
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;*/
+
+
+    /* AQUI UTILIZAREMOS O GRID AREA */
+    /* VALORES
+        grid-row-start
+        grid-column-start
+        grid-row-end
+        grid-column-end
+    */
+
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.azul {
+    /* grid-column: 3 / span 3; */
+    grid-area: 1 / 3 / 1 / 6;
+}
+
+.rosa {
+    /* grid-column: 1 / span 2;
+    grid-row: 3 / span 1; */
+    grid-area: 3 / 1 / 3 / 3;
+}
+
+.laranja-escuro {
+    /* grid-column: 3 / span 2;
+    grid-row: 2/ span 2; */
+
+    grid-area: 2 / 3 / 4 / 5;
+}
