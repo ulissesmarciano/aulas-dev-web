@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    padding: 3em;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    /* O DIFERENCIAL DO AUTOFIT É QUE A COLUNA RESPONDE EM WIDTH ATÉ OCUPAR TODO O TAMANHO DO CONTAINER */
+    /* SE EU UTILIZAR O AUTOFILL ELE VAI RESPEITAR O LIMITE DE 200PX E NAO VAI APROVEITAR O WIDTH MAXIMO DA TELA */
+}
+
+.container p {
+    padding: 2em;
+    border-radius: .3rem;
+    box-shadow: 10px 10px 30px #00000010;
+}
+
