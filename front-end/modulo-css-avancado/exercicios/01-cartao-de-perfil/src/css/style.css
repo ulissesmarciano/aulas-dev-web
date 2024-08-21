@@ -1,0 +1,73 @@
+body {
+    background-color: var(--background-padrao);
+}
+
+.container {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-card {
+
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+.profile-card .information-section {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-card .information-section img {
+    
+    border-radius: 50px;
+}
+
+
+
+.profile-card hr {
+    border: 1px solid #c1c1c1;
+    width: 100%;
+}
+
+.profile-stats {
+    width: 100%;
+    padding: 2rem;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.profile-stats .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-card .information-section .user-name,
+.profile-card .profile-stats .stats .counter {
+    font-weight: 700;
+}
+
+.profile-card .information-section .user-name .age,
+.profile-card .profile-stats .stats .counter-type,
+.profile-card .information-section .city {
+    color: var(--cor-de-texto-padrao);
+    font-weight: 400;
+}
