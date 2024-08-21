@@ -1,0 +1,27 @@
+.container > div{
+    border: 1px solid black;
+    background-color: #8a2be2;
+    color: white;
+    font-size: 20px;
+}
+
+.container {
+    display: grid;
+    /* 
+    AQUI EU SETO MEUS COMPOMENTES POR LINHA E COLUNA
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(2, 150px) ;  */
+
+    /* ABAIXO EU CONSIGO CONFIGURAR OS DOIS EM UMA LINHA DE CÓDIGO */
+    grid-template: repeat(1, 150px) / repeat(2, auto);
+
+    /* 
+        AQUI PASSO VALORES DE SEPARAÇÃO INDIVIDUAL PARA COLUNA E PARA LINHA
+    column-gap: 10px;
+    row-gap: 50px;  */
+
+    /* AQUI PASSO OS VALORES EM UMA LINHA SOMENTE. SEGUE A LOGICA DE MARGIN E PADDING */
+    gap: 50px 10px;
+
+    
+}
