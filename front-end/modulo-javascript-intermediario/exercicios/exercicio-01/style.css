@@ -1,0 +1,13 @@
+.secao-de-conteudo .primeira-cor,
+.secao-de-conteudo .segunda-cor {
+    height: 100px;
+    width: 100px;
+}
+
+.secao-de-conteudo .primeira-cor {
+    background-color: blue;
+}
+
+.secao-de-conteudo .segunda-cor {
+    background-color: red;
+}
