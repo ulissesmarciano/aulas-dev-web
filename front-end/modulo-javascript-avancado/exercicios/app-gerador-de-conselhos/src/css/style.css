@@ -1,0 +1,78 @@
+body {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: hsl(218, 23%, 16%);
+}
+
+.card-advice {
+    max-width: 500px;
+    padding: 2.4rem 2.4rem 0;
+    gap: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 1.4rem;
+}
+
+.card-advice .title {
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 5px;
+}
+
+.card-advice .text{
+    color: hsl(193, 38%, 86%);
+    font-size: 1.9rem;
+
+    font-weight: 800;
+}
+
+.card-advice .mobile-divider {
+    display: none;
+}
+
+.card-advice .btn {
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+    transform: translateY(50%);
+    transition: 0.3s;
+
+}
+
+.card-advice .btn:hover {
+    box-shadow: 0 5px 20px hsl(150, 100%, 66%);
+}
+
+@media(max-width: 425px){
+    .card-advice {
+        margin: 1rem;
+        width: 100%;
+
+    }
+
+    .card-advice .desktop-divider {
+        display: none;
+    }
+
+    .card-advice .mobile-divider {
+        display: block;
+    }
+}
