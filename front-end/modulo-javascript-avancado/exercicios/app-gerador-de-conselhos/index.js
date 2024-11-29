@@ -5,13 +5,13 @@
 // const advice = document.getElementById('advice')
 
 
-// botao.addEventListener('click', () => {
+// botao.addEventListener('click', () => {//a funcão pode ser adicionada no lugar do arrow function.
 //     conselhos()
     
 // })
 
 
-// async function conselhos(){
+// async function conselhos(){//trocar para getAdvice
 //     try {
 //         const resposta = await fetch("https://api.adviceslip.com/advice")
 //         const conselhoAleatorio = await resposta.json()
